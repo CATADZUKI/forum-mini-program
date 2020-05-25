@@ -1,0 +1,56 @@
+<!--pages/homeDetail/homeDetail.wxml-->
+<view class="content">
+  <view class="user-head">
+    <view class="userimg">
+      <open-data type='userAvatarUrl'>userAvatarUrl</open-data>
+    </view>
+    <view class="detail-name">
+      <view>{{topic.user.nickName}}</view>
+      <view class="detail-date">{{topic.date}}</view>
+    </view>
+  </view>
+  <!-- 内容-->
+  <view class="detail-content">
+    <view wx:if="{{topic.content != ''}} && {{topic.images.length > 0}}">
+        <text class='content-text'>{{topic.content}}</text>
+        <block wx:for="{{topic.images}}" wx:for-index="idx">
+          <image class='content-img' src='{{item}}' mode='aspectFill' bindtap="previewImg" data-index='{{idx}}'></image>
+        </block>
+      </view>
+      <!-- 显示图片 -->
+      <view wx:elif="{{topic.images.length > 0}}">
+        <block wx:for="{{topic.images}}" wx:for-index="idx">
+          <image class='content-img' src='{{item}}' mode='aspectFill' bindtap="previewImg" data-index='{{idx}}'></image>
+        </block>
+      </view>
+      <!-- 显示文本 -->
+      <block wx:else>
+        <text class='content-text'>{{topic.content}}</text>
+      </block>
+  </view>
+</view>
+
+<!--输入框 -->
+<view class="input-area">
+  <view class="input-text">
+    <input bindinput="bindKeyInput" placeholder="输入你的回复~" />
+  </view>
+  <view class="input-btn">
+    <button bindtap='saveReplay' open-type="getUserInfo">回复</button>
+  </view>
+</view>
+
+<!-- 显示回复列表 -->
+  <view class='replay_content' wx:if="{{replays.length > 0}}">
+    <text class='tip-text'>-----------以下是回复内容----------</text>
+    <block wx:for="{{replays}}" wx:for-index="idx">
+      <text>{{idx}} : {{item.content}}</text>
+    </block>
+  </view>
+
+<view class='like-container' wx:if='{{isLike}}'>
+  <image class='like-icon' src='../../images/topic-detail/like.png' bindtap='onLikeClick' ></image>
+</view>
+<view class='like-container' wx:else>
+  <image class='like-icon' src='../../images/topic-detail/unlike.png' bindtap='onLikeClick'></image>
+</view>

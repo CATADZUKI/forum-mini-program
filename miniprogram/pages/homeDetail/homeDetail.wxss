@@ -1,0 +1,117 @@
+/* pages/homeDetail/homeDetail.wxss */
+
+.content{
+   display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 16px;
+  margin: 0 auto;
+}
+
+.user-head{
+  display: flex;
+  flex-direction: row;
+}
+
+.userimg{
+  overflow: hidden;
+  border-radius: 50%;
+  height: 49px;
+  width: 49px;
+}
+
+.detail-name{
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.detail-date{
+  font-size: 15px;
+  color: #999;
+}
+
+.detail-image{
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+
+.detail-content{
+   display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  margin-top: 14px;
+}
+
+.content-scroll {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content-text {
+  font-size: 18px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.content-img {
+  width: 100%;
+  min-height: 100px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #999;
+}
+
+.like-icon {
+  width: 48px;
+  height: 48px;
+  margin: 40rpx;
+  align-items: center;
+  margin-left: 45%;
+}
+
+.like-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+
+.input-text{
+  width: 100%;
+  background-color: #f3efef;
+  height: 36px;
+  align-items: center;
+  padding: 5px;
+}
+
+.input-area{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-btn{
+  align-items: center;
+}
+
+
+
+.replay_content{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 200rpx;
+}
+
+.tip-text{
+  display: flex;
+  flex-direction: row;
+  margin:10rpx; 
+}

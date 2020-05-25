@@ -1,0 +1,75 @@
+/* pages/me/me.wxss */
+
+.amountBg{
+  display: flex;
+  flex-direction: row;
+  background-color:#5495e6;
+  height: 100px;
+  align-items: center;
+}
+
+.img{
+  overflow: hidden;
+  display: block;
+  margin-left: 20px;
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+.account{
+  color: #fff;
+  width: 70%;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.nick-name{
+  font-family: "Mcrosoft Yahei";
+  font-size: 16px;
+}
+
+.address{
+  font-family: "Mcrosoft Yahei";
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.icon {
+  width: 50px;
+  text-align: center;
+}
+
+.itemName {
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 50px;
+  align-items: center;
+}
+
+.right {
+  width: 40%;
+  text-align: right;
+}
+
+.hr {
+  height: 1px;
+  background-color: #ccc;
+  opacity:0.2
+  }
+
+.line {
+  height: 10px;
+}
+
+.opr{
+  color: #9aaeb6;
+  font-size: 12px;
+}

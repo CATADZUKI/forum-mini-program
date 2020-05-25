@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/me/me",
+    "pages/index/index",
+    "pages/collect/collect",
+    "pages/homeDetail/homeDetail",
+    "pages/publish/publish",
+    "pages/history/history",
+    "pages/advance/advance"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5495e6",
+    "navigationBarTitleText": "游戏圈",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "广场",
+        "iconPath": "images/tab/home_unselect.png",
+        "selectedIconPath": "images/tab/home_select.png"
+      },
+      {
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/tab/me_unselect.png",
+      "selectedIconPath": "images/tab/me_select.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
