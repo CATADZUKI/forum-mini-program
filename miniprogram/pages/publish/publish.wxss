@@ -54,7 +54,7 @@ textarea {
 .btn-img {
   width: 220px;
   height: 45px;
-  line-height: 45px;
+  line-height: 36px;
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: rgb(113, 98, 250);
@@ -67,7 +67,7 @@ textarea {
 .btn {
   width: 220px;
   height: 45px;
-  line-height: 45px;
+  line-height: 36px;
   background-color: #d50310;
   color: #fff;
   border-radius: 50px;

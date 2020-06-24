@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/home/home",
     "pages/me/me",
+    "pages/home/home",
     "pages/index/index",
     "pages/collect/collect",
     "pages/homeDetail/homeDetail",
     "pages/publish/publish",
     "pages/history/history",
     "pages/advance/advance"
+    
     
   ],
   "window": {

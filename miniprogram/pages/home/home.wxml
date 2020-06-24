@@ -6,7 +6,7 @@
 <view class="home-content" bindtap="onItemClick" data-topicId='{{item._id}}'  data-openid='{{item._openid}}'>
   <view class="info">
     <view class="homeimg">
-      <open-data type="userAvatarUrl"></open-data>
+      <image class="user-head" src='{{item.user.avatarUrl}}' mode='aspectFill'></image>
     </view>
     <view class="homename">
       <view>{{item.user.nickName}}</view>

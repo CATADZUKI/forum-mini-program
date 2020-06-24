@@ -1,4 +1,7 @@
 <!--pages/homeDetail/homeDetail.wxml-->
+<view class="todel" >
+  <button class="hometopub"  bindtap='onDelClick' style="width:100px">删除</button>
+</view>
 <view class="content">
   <view class="user-head">
     <view class="userimg">

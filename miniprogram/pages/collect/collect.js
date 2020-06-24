@@ -62,7 +62,7 @@ Page({
               topics: that.data.topics,
             })
           },
-          fail: console.log
+          fail: console.error
         })
     }
   },

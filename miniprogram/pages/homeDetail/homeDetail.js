@@ -163,6 +163,13 @@ Page({
     });
   },
 
+  onDelClick(){
+    db.collection('topic').doc(that.data.id).remove({
+
+      success: that.refreshLikeIcon(false),
+    });
+  },
+
   /**
    * 跳转回复页面
    */

@@ -1,5 +1,11 @@
 /* pages/homeDetail/homeDetail.wxss */
 
+.todel{
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 .content{
    display: flex;
   flex-direction: column;
@@ -85,9 +91,10 @@
 
 
 .input-text{
-  width: 100%;
+  width: 90%;
   background-color: #f3efef;
   height: 36px;
+  margin-left: 10px;
   align-items: center;
   padding: 5px;
 }

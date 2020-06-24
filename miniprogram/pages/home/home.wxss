@@ -26,12 +26,12 @@ block{
   margin: 0 auto;
 }
 
-.homeimg{
-  overflow: hidden;
+.user-head {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   border-radius: 50%;
-  margin-left: 10px;  
-  height: 49px;
-  width: 49px;
+  background-color: #ccc;
 }
 
 .homename{
